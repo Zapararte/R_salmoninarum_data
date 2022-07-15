@@ -1,5 +1,5 @@
 # README
-
+_This repository contains the files related to the publication (NOMBRE PUBLICACION)_
 ## To replicate the results
 
 To replicate the results obtained, the following steps must be carried out.
