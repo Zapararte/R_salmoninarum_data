@@ -14,7 +14,7 @@ To replicate the results obtained, the following steps must be carried out.
 
 ``ls -1 *.snps > my_list``  
 ``foreach i ( `cat my_list` )``  
-``cat $i | awk -v awkvar="$i" '{printf "%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s\n", $1, 9, $2, 9, $3, 9, $4, 9, $5, 9, $6, 9, $7, 9, $8, 9, $9, 9, $10, 9, $11, 9, $12, 9, $13, 9, $14, 9, awkvar}' >> $i.out``  
+``cat $i | awk -v awkvar="$i" '{printf "%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s%c%s\n", $1, 9, $2, 9, $3, 9, $4, 9, $5, 9, $6, 9, $7, 9, $8, 9, $9, 9, $10, 9, $11, 9, $12, 9, $13, 9, $14, 9, awkvar}' > $i.out``  
 ``cat *.out >> example_file.txt``
 
 4. ``visualization.py``, ``table.py`` and ``example_file.txt`` must be in the same directory. Run ``visualization.py`` to generate two files. The first one contains, for all the sequences, the nucleotides that are in the positions where a SNP was found. The second file contains the positions where the SNPs were found with respect to the reference genome.
